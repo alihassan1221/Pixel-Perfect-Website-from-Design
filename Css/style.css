@@ -1,0 +1,1154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+
+}
+.container
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Navigation Bar */
+#navigation .navigation
+{
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 150px;    
+
+}
+#navigation .logo
+{
+    margin: 5px 0;
+}
+#navigation .navbar li
+{
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+#navigation .navbar li:hover
+{
+    color: rgb(107, 173, 235);
+}
+#navigation .navbar ul a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#navigation .navigation .btn button
+{  
+    background-color: rgb(107, 173, 235);
+    border: none;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid rgb(107, 173, 235);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+#navigation .btn button:hover
+{
+    background-color: transparent;
+    color: rgb(107, 173, 235);
+}
+/* End Navigation */
+
+
+/* Home Section */
+#home .home
+{
+    position: relative;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right ,#272848,#415968);
+}
+#home .text
+{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#home .text h1
+{
+    /* max-width: 80%; */
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+#home .text p
+{
+    max-width: 80%;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+#home .home .text .buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .home .text .button1 button
+{
+    background-color: rgb(107, 173, 235);
+    width: 150px;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(107, 173, 235);
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+#home .home .text .button2 button 
+{
+    cursor: pointer;
+    margin: 10px;
+    background-color: transparent;
+    width: 150px;
+    color: rgb(107, 173, 235);
+    padding: 10px;
+    border: 2px solid rgb(107, 173, 235);
+    text-transform: uppercase;
+    border-radius: 2px;
+    justify-content: center;
+    transition: 0.3s;
+}
+#home .home .text .button1 button:hover
+{
+    background-color: transparent;
+    color: rgb(107, 173, 235);
+}
+/* End Home Section */
+
+
+
+
+/* About Section*/
+#about .about
+{
+   width: 100%;
+   background-color: white;
+}
+#about .all-items
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+
+#about .all-items .items
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin: 0 50px;
+}
+#about .all-items .items h1
+{
+    font-size: 35px;
+}
+#about .icons img
+{
+    width: 60px;
+    height: 60px;
+}/* End About Section */
+
+
+
+/* Services Section */
+#services .section
+{
+    position: relative;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #415968,#272848);
+}
+#services .section .both
+{
+    width: 50%;
+}
+#services .colom-right
+{
+    margin-left: 600px;
+    margin-top: -300px;
+}
+
+#services .colom-right video
+{
+    margin-left: 150px;
+    width: 400px;
+    height: 350px; 
+}
+#services .colom-left .section-head
+{
+    margin-left: 100px;
+    flex-direction: column;
+    font-size: 25px;
+}
+#services .colom-left .section-head hr
+{
+    width: 70px;
+    margin-top: 10px;
+    height: 4px;
+    background-color: #00A5E0;
+    border-radius: 10px;
+    border: none;  
+}
+#services .colom-left .section-info
+{
+    font-size: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+
+}
+#services .colom-left
+{
+    margin-left: 60px;
+}
+#services .colom-left .section-info .icon
+{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#services .colom-left .section-info .icon h2
+{
+    font-size: 10px;
+}
+#services .colom-left .section-info .icon img
+{
+    width: 40px;
+    height: 40px;
+}
+/* End Services Section */
+
+
+
+/* Pricing Section */
+
+#pricing .section-title
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: 25px;
+}
+#pricing .section-title hr
+{
+    width: 80px;
+    margin-top: 10px;
+    height: 4px;
+    background-color: #00A5E0;
+    border-radius: 10px;
+    border: none;
+}
+#pricing .section-table
+{
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#pricing .section-table table,th,td
+{
+    padding: 15px 30px;
+    border-radius: 3px;
+    border: 4px solid white;
+    border-collapse: collapse;
+}
+#pricing .section-table thead
+{
+    text-align: left;
+    color: white;
+    background-color: #00A5E0;
+}
+#pricing .section-table tbody
+{
+    text-align: left;
+    background-color: #F6F5F4;
+}
+#pricing .section-table .tbl
+{
+    width: 80%;
+}
+#pricing .button .btn
+{
+    background-color: rgb(107, 173, 235);
+    border: none;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid rgb(107, 173, 235);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+#pricing .button .btn:hover
+{
+    background-color: transparent;
+    color: rgb(107, 173, 235);
+}
+#pricing .button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* End Pricing Section */
+
+
+
+/* Booking Section */
+#Booking .Booking
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, #415968,#272848);
+}
+#Booking .section-head
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: 20px;
+    font-size: 25px;
+}
+#Booking .section-head h1
+{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+#Booking .section-head hr
+{
+    width: 80px;
+    height: 4px;
+    margin-top: 20px;
+    background-color: #00A5E0;
+    border-radius: 10px;
+    border: none;
+}
+
+#Booking .form .info input
+{
+    background-color: black;
+    opacity: 0.5;
+    border: none;
+    outline: none;
+    color: white;
+    font-style: italic;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+}
+#Booking .form .info select
+{
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    font-style: italic;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+}
+
+#Booking .form .info textarea
+{
+    background-color: black;
+    opacity: 0.5;
+    border: none;
+    outline: none;
+    color: white;
+    font-style: italic;
+    margin: 10px;
+    width: 82.5%;
+    padding: 10px;
+}
+#Booking .Booking .form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Booking .Booking .form .info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#Booking .Booking .form .info .input,.inputs
+{
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Booking .Booking .form .button button
+{
+    background-color: rgb(107, 173, 235);
+    margin: 50px;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid rgb(107, 173, 235);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+#Booking .Booking .form .button button:hover
+{
+    background-color: transparent;
+    color:  rgb(107, 173, 235);
+}
+/* End Booking Section */
+
+
+/* Dentists Section */
+#dentists .dentist
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#dentists .dentist-header
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: 25px;
+}
+#dentists .dentist-header h1
+{
+    font-weight: 500;
+
+}
+#dentists .dentist-header hr
+{
+    width: 80px;
+    margin-top: 20px;
+    height: 4px;
+    background-color: #00A5E0;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 50px;
+}
+#dentists .dentist-bottom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#dentists .dentist-info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 300px;
+    padding: 0px;
+    margin: 20px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+    background-color: grey;
+    margin-bottom: 120px;
+}
+#dentists .dentist-info img
+{
+    width: 300px;
+    height: 250px;
+}
+#dentists .dentist-info h4, h6
+{
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    color: white;
+    background-image: linear-gradient(to right, #415968,#272848);
+    
+
+}
+#dentists .dentist .dentist-person
+{
+    height: 50vh;
+    background-image: linear-gradient(to right, #415968,#272848);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#dentists .dentist .person
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+#dentists .dentist .person img
+{
+
+    border-radius: 150px;
+    width: 200px;
+}
+#dentists .dentist .person p
+{
+    margin-left: 20px;
+}
+/* End Dentists Section */
+
+
+/* News Section */
+
+#news .news
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+#news .news .news-heading
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    /* margin: 50px; */
+}
+#news .news .news-heading h1
+{
+    margin-top: 100px;
+    font-weight: 500;
+}
+#news .news .news-heading hr
+{
+    margin-bottom: 50px;
+    width: 80px;
+    margin-top: 20px;
+    height: 4px;
+    background-color: #00A5E0;
+    border-radius: 10px;
+    border: none;
+}
+#news .news-bottom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    height: auto;
+}
+#news .news-bottom .card
+{
+    background-color: rgb(233, 227, 227);
+    margin: 10px;
+    margin-bottom: 100px;
+    transition: 0.3s;
+}
+#news .news-bottom .card:hover
+{
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+#news .news-bottom .card img
+{
+    width: 330px;
+    height: 250px;
+}
+#news .news-bottom .card h3,p
+{
+    padding: 10px 25px;
+}
+/* End News Section */
+
+
+/* Footer */
+#footer 
+{
+    display: flex;
+    color: white;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #415968,#272848);
+
+}
+#footer .background
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 90%;
+}
+#footer .logo
+{  
+   margin-left: -50px;
+}
+#footer .logo img
+{   
+    height: 30px;
+    margin: 12px 0;
+}
+#footer .logo a
+{
+    text-decoration: none;
+    font-size: 25px;
+}
+#footer .allitems .info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#footer .allitems .info p
+{
+    font-size: 12px;
+}
+#footer .background .day-hour
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+#footer .background .day-hour .hours
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#footer .background .day-hour .hour
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+#footer .background .day-hour .hours .time
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .background .day-hour .hours .time .week-time
+{
+    margin: 20px 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#footer .background .day-hour .hours .head
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+#footer .quick .link 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+#footer .quick .link .link-head
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#footer .quick .link .link-bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#footer .quick .link .link-bottom .all-btns .btns
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+#footer .quick .link .link-bottom .query p
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#footer .nletter
+{
+    margin-top: 80px;
+}
+#footer .nletter .text .news-head h2
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#footer .nletter .news .text p
+{
+    margin-left: -25px;
+    font-size: 12px;
+}
+#footer .nletter .news .emailbtn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#footer .nletter .news .emailbtn input
+{
+    background-color: black;
+    opacity: 0.7;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+}
+#footer .nletter .news .emailbtn .btn
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #00A5E0;
+    width: 35px;
+    height: 35px;
+}
+#footer .nletter .news .emailbtn .btn img
+{
+    width: 25px;
+    height: 25px;
+}
+#footer .nletter .news .social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .nletter .news .social .social-icons
+{
+    margin-top: 20px;
+}
+#footer .nletter .news .social .social-icons img
+{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    transition: 0.3s;
+}
+#footer .nletter .news .social .social-icons img:hover
+{
+    border-radius: 20px;
+    box-shadow: 0 5px rgba(241, 206, 206, 0.75);
+}
+
+/* End Footer Section */
+
+
+
+
+
+
+
+
+
+/* Media Query */
+
+@media screen and (max-width:1200px)
+{
+    #services .colom-right video
+    {
+        margin-left: -0.2px;
+    }
+}
+
+
+@media screen and (max-width:1030px)
+{
+    #services .colom-right video
+    {
+        margin-top: -50px;
+        width: 350px;
+        height: 300px;
+        margin-left: -100px;
+    }
+    #Booking .form .info input
+    {
+        width: 30%;
+    }
+    #Booking .form .info select
+    {
+        width: 30%;
+    }
+    #Booking .form .info textarea
+    {
+        width: 30%;
+    }
+    #denists .dentist
+    {
+        height: auto;
+    }
+    #dentists .dentist .dentist-bottom
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #dentists .dentist .dentist-bottom .dentist-info
+    {
+        width: 500px;
+    }
+
+    #news .news
+    {
+        height: auto;
+    }
+    #news .news .news-bottom 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #news .news .news-bottom .card
+    {
+        width: 500px;
+    }
+    #news .news .news-bottom .card img
+    {
+        width: 500px;
+
+    }
+}
+
+
+
+@media screen and (max-width: 1000px)
+{
+    #denstists .dentist .dentist-bottom .dentist-info
+    {
+        margin: 50px;
+    }
+}
+
+
+
+@media screen and (max-width:990px)
+{
+    #services .colom-right video
+    {
+        width: 300px;
+        height: 250px;
+        margin-left: -160px;
+    }
+    #services .section .both .section-head
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -10px;
+    }
+}
+
+
+
+@media screen and (max-width:860px)
+{
+    #services .colom-right video
+    {
+        margin-left: -200px;
+    }
+    #services .section .both .section-head
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -10px;
+    }
+    #about .all-items .items
+    {
+        margin: 0 30px;
+    }
+    #Booking .form .info input
+    {
+        width: 20%;
+    }
+    #Booking .form .info select
+    {
+        width: 20%;
+    }
+    #Booking .form .info textarea
+    {
+        width: 30%;
+    }
+    #footer .background
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width:775px)
+{
+    #services .section .both .section-head
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -10px;
+    }
+}
+
+
+
+@media screen and (max-width:740px)
+{
+    #navigation .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #services .colom-right video
+    {
+        display: none;
+    }
+    #services .section .both
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #services .section .both .section-head
+    {
+        margin-top: -20px;
+        margin-left: -4px;
+        width: 100%;
+    }
+    #services .colom-right
+    {
+        width: 0%;
+    }
+    #services .colom-left
+    {
+        margin-top: -250px;
+        width: 80%;
+    }
+    #services .colom-left .section-info .icon img
+    {
+        width: 50px;
+        height: 50px;
+    }
+    #dentists .dentist .dentist-bottom .dentist-info
+    {
+        width: 300px;
+    }
+
+    #news .news .news-bottom .card
+    {
+        width: 300px;
+    }
+    #news .news .news-bottom .card img
+    {
+        width: 300px;
+
+    }
+}
+
+
+
+@media screen and (max-width:680px)
+{
+    
+    #dentists .dentist .dentist-person
+    {
+        height: auto;
+    }
+    #dentists .dentist .dentist-person .person
+    {
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #about .all-items
+    {
+        flex-direction: column;
+
+    }
+    #about .all-items .items .icons img
+    {
+        width: 70px;
+        height: 70px;
+    }
+    #Booking .form .info .input
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #Booking .form .info input
+    {
+        width: 30%;
+    }
+    #Booking .form .info .inputs
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #Booking .form .info select
+    {
+        width: 30%;
+    }
+}
+
+
+
+@media screen and (max-width:530px)
+{
+    #home .home
+    {
+        height: auto;
+    }
+    #services .section-head h1
+    {
+        font-size: 25px;
+    }
+    #services .section .colom-left .section-info .icon img
+    {
+        width: 30px;
+        height: 30px;
+    }
+    #services .colom-left .section-info .icon img
+    {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:400px)
+{
+    #home .home
+    {
+        background-image: linear-gradient(to left ,#04087a,#685841);
+    }
+    #services .section .both
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* width: 80%; */
+    }
+    #services .section .both .section-head
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #services .colom-right
+    {
+        width: 0%;
+    }
+    #services .colom-left
+    {
+        width: 80%;
+    }
+}
